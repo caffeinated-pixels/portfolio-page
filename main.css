@@ -1,0 +1,236 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Quicksand", sans-serif;
+  line-height: 1.42857143;
+  font-size: 1.125rem;
+}
+
+body {
+  background: url("https://thecakeisaliegaming.files.wordpress.com/2020/02/dsc_3920.jpg") no-repeat fixed center;
+  background-size: cover;
+}
+
+/* START of GENERAL STYLING CLASSES */
+.center-text {
+  text-align: center;
+}
+
+.fcontainer {
+  display: flex;
+}
+
+.falign-center {
+  align-items: center;
+}
+
+.fjustify-center {
+  justify-content: center;
+}
+
+.main-box {
+  background-color: lightblue;
+  background-color: rgba(230, 208, 185,0.9);
+  padding: 2.7rem 4rem;
+  border-radius: 10px;
+  width: 80vw;
+  max-width: 1600px;
+  margin: 3.2rem auto;
+  box-shadow: 5px 5px 15px grey;
+  overflow: hidden;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1.6rem;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+}
+
+a {
+  color: #3399ff;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+a:hover, a:focus {
+  color: #b45922;
+}
+
+.main-box a {
+  text-shadow: 0.5px 0.5px 0.5px grey;
+  text-shadow: 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.4);
+}
+/* END of GENERAL STYLING CLASSES */
+
+/* START of NAVBAR STYLING */
+#navbar {
+  background-color: black;
+  color: white;
+  padding: 0.9rem 1.4rem;
+  box-shadow: 0px 1px 8px #3399ff;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  overflow: auto;
+}
+
+nav ul {
+  list-style: none;
+}
+
+.logo {
+  flex: 1;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+nav li {
+  padding: 0.4rem 1.5vw;
+}
+/* END of NAVBAR STYLING */
+
+/* START of WELCOME SECTION STYLING */
+#welcome-section {
+  height: 100vh;
+  color: white;
+  font-size: 1.75rem;
+  text-shadow: 2px 2px 1px black;
+  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.6);
+}
+/* END of WELCOME SECTION STYLING */
+
+/* START of ABOUT SECTION STYLING */
+.about-fbox {
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-text {
+  flex: 1;
+}
+
+.about-text p {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.selfie-wrapper {
+  flex-basis: 250px;
+  margin-left: 2.5rem;
+  align-self: center;
+}
+
+.selfie {
+  width: 100%;
+  height: auto;
+  border-radius: 5%;
+  background-color: grey;
+  box-shadow: 3px 3px 8px grey;
+}
+/* END of ABOUT SECTION STYLING */
+
+/* START of PROJECTS STYLING */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+  grid-gap: 2rem;
+}
+
+.project-tile p {
+  font-size: 1.3rem;
+  padding-top: 0.6rem;
+  font-weight: 600;
+}
+
+.tile-img {
+  width: 100%;
+  min-height: 300px;
+  box-shadow: 3px 3px 8px grey;
+  border-radius: 5%;
+  object-fit: cover;
+}
+/* END of PROJECTS STYLING */
+
+/* START of CONTACT STYLING */
+.fcontacts {
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.ficons {
+  margin: 0 1.4rem 1.4rem;
+}
+
+.fa-envelope {
+  color: #ffffcc;
+}
+
+.fa-free-code-camp {
+  color: #006400;
+}
+
+.fa-github-square {
+color: #24292E;
+}
+
+.fa-twitter-square {
+color: #1DA1F2;
+}
+
+.fa-youtube-square {
+color: #FF0000;
+}
+
+.fa-instagram {
+color: #7E22C3;
+}
+/* END of CONTACT STYLING */
+
+footer {
+  color: white;
+  font-size: 1.30rem;
+  margin-bottom: 2.5rem;
+  text-shadow: 1px 1px 0px black;
+}
+
+/* START of MEDIA QUERIES */
+@media (max-width: 1200px) {
+  .about-fbox {
+    flex-direction: column;
+  }
+
+  .selfie-wrapper {
+    margin: 1.5rem auto 0;
+    max-width: 300px;
+  }
+
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 0.9rem;
+  }
+
+  .logo {
+    font-size: 1.125rem;
+  }
+
+  #welcome-section {
+    font-size: 1.55rem;
+  }
+
+  .main-box {
+   width: 90vw;
+   padding: 1.8rem 1.9rem;
+ }
+
+}
