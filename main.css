@@ -8,11 +8,9 @@ html {
   font-family: "Quicksand", sans-serif;
   line-height: 1.42857143;
   font-size: 1.125rem;
-  /* background: url(./images/toronto1080.jpg) no-repeat center center fixed;
-  background-size: cover; */
 }
 
-body:after{
+body:after { /* addresses iOS issue with fixed cover background */
   content:"";
   position:fixed; /* stretch a fixed position to the whole screen */
   top:0;
