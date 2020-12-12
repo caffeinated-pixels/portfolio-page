@@ -8,10 +8,7 @@ html {
   font-family: "Quicksand", sans-serif;
   line-height: 1.42857143;
   font-size: 1.125rem;
-}
-
-body {
-  background: url("https://thecakeisaliegaming.files.wordpress.com/2020/02/dsc_3920.jpg") no-repeat fixed center;
+  background: url("https://thecakeisaliegaming.files.wordpress.com/2020/02/dsc_3920.jpg") no-repeat center center fixed;
   background-size: cover;
 }
 
@@ -156,7 +153,8 @@ nav li {
   min-height: 300px;
   box-shadow: 3px 3px 8px grey;
   border-radius: 5%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 /* END of PROJECTS STYLING */
 
