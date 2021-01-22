@@ -161,6 +161,12 @@ nav li {
   user-select: none;
 }
 
+.burger-btn:hover, .burger-btn:focus {
+  color: #b45922;
+  text-shadow: 1px 1px 2px lightyellow;
+  filter: brightness(120%);
+}
+
 @media only screen and (max-width: 768px) {
   .burger-btn {
     display: block;

@@ -157,6 +157,12 @@ nav li {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  &:hover,
+  &:focus {
+    color: #b45922;
+    text-shadow: 1px 1px 2px lightyellow;
+    filter: brightness(120%);
+  }
 
   @include mq(768px) {
     display: block;
