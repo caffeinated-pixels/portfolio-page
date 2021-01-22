@@ -11,19 +11,26 @@
 }
 
 html {
-  font-family: "Quicksand", sans-serif;
-  line-height: 1.42857143;
   font-size: 1.125rem;
+  @include mq(768px) {
+    font-size: 0.9rem;
+  }
 }
 
-body:after { /* addresses iOS issue with fixed cover background */
-  content:"";
-  position:fixed; /* stretch a fixed position to the whole screen */
-  top:0;
-  height:100vh; /* fix for mobile browser address bar appearing disappearing */
-  left:0;
-  right:0;
-  z-index:-1; /* needed to keep in the background */
+body {
+  font-family: 'Quicksand', sans-serif;
+  line-height: 1.42857143;
+}
+
+body:after {
+  /* addresses iOS issue with fixed cover background */
+  content: '';
+  position: fixed; /* stretch a fixed position to the whole screen */
+  top: 0;
+  height: 100vh; /* fix for mobile browser address bar appearing disappearing */
+  left: 0;
+  right: 0;
+  z-index: -1; /* needed to keep in the background */
   background: url(./images/toronto1080.jpg) center center;
   background-size: cover;
 }
@@ -46,7 +53,7 @@ body:after { /* addresses iOS issue with fixed cover background */
 }
 
 .main-box {
-  background-color: rgba(230, 208, 185,0.9);
+  background-color: rgba(230, 208, 185, 0.9);
   padding: 2.7rem 4rem;
   border-radius: 10px;
   width: 80vw;
@@ -54,6 +61,13 @@ body:after { /* addresses iOS issue with fixed cover background */
   margin: 3.2rem auto;
   box-shadow: 5px 5px 15px grey;
   overflow: hidden;
+
+  @include mq(768px) {
+    .main-box {
+      width: 90vw;
+      padding: 1.8rem 1.9rem;
+    }
+  }
 }
 
 h2 {
@@ -70,7 +84,8 @@ a {
   text-decoration: none;
 }
 
-a:hover, a:focus {
+a:hover,
+a:focus {
   color: #b45922;
 }
 
@@ -102,6 +117,10 @@ nav ul {
   flex: 1;
   font-size: 1.5rem;
   font-weight: 600;
+
+  @include mq(768px) {
+    font-size: 1.125rem;
+  }
 }
 
 nav li {
@@ -116,6 +135,10 @@ nav li {
   font-size: 1.75rem;
   text-shadow: 2px 2px 1px black;
   text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.6);
+
+  @include mq(768px) {
+    font-size: 1.55rem;
+  }
 }
 /* END of WELCOME SECTION STYLING */
 
@@ -124,6 +147,10 @@ nav li {
   max-width: 100%;
   display: flex;
   justify-content: space-between;
+
+  @include mq(1200px) {
+    flex-direction: column;
+  }
 }
 
 .about-text {
@@ -139,6 +166,11 @@ nav li {
   flex-basis: 250px;
   margin-left: 2.5rem;
   align-self: center;
+
+  @include mq(1200px) {
+    margin: 1.5rem auto 0;
+    max-width: 300px;
+  }
 }
 
 .selfie {
@@ -169,7 +201,7 @@ nav li {
   box-shadow: 3px 3px 8px grey;
   border-radius: 5%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 /* END of PROJECTS STYLING */
 
@@ -192,58 +224,32 @@ nav li {
 }
 
 .fa-github-square {
-color: #24292E;
+  color: #24292e;
 }
 
 .fa-twitter-square {
-color: #1DA1F2;
+  color: #1da1f2;
 }
 
 .fa-youtube-square {
-color: #FF0000;
+  color: #ff0000;
 }
 
 .fa-instagram {
-color: #7E22C3;
+  color: #7e22c3;
 }
 /* END of CONTACT STYLING */
 
 footer {
   color: white;
-  font-size: 1.30rem;
+  font-size: 1.3rem;
   margin-bottom: 2.5rem;
   text-shadow: 1px 1px 0px black;
 }
 
-/* START of MEDIA QUERIES */
-@media (max-width: 1200px) {
-  .about-fbox {
-    flex-direction: column;
-  }
-
-  .selfie-wrapper {
-    margin: 1.5rem auto 0;
-    max-width: 300px;
-  }
-
-}
-
-@media (max-width: 768px) {
-  html {
-    font-size: 0.9rem;
-  }
-
-  .logo {
-    font-size: 1.125rem;
-  }
-
-  .welcome-section {
-    font-size: 1.55rem;
-  }
-
-  .main-box {
-   width: 90vw;
-   padding: 1.8rem 1.9rem;
- }
-
-}
+// @media (max-width: 768px) {
+//   .main-box {
+//     width: 90vw;
+//     padding: 1.8rem 1.9rem;
+//   }
+// }

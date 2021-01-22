@@ -5,14 +5,24 @@
 }
 
 html {
-  font-family: "Quicksand", sans-serif;
-  line-height: 1.42857143;
   font-size: 1.125rem;
+}
+
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 0.9rem;
+    /* lets us pass content block into mixin */
+  }
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  line-height: 1.42857143;
 }
 
 body:after {
   /* addresses iOS issue with fixed cover background */
-  content: "";
+  content: '';
   position: fixed;
   /* stretch a fixed position to the whole screen */
   top: 0;
@@ -54,6 +64,16 @@ body:after {
   overflow: hidden;
 }
 
+@media only screen and (max-width: 768px) {
+  .main-box {
+    /* lets us pass content block into mixin */
+  }
+  .main-box .main-box {
+    width: 90vw;
+    padding: 1.8rem 1.9rem;
+  }
+}
+
 h2 {
   font-size: 2rem;
   margin-bottom: 1.6rem;
@@ -68,7 +88,8 @@ a {
   text-decoration: none;
 }
 
-a:hover, a:focus {
+a:hover,
+a:focus {
   color: #b45922;
 }
 
@@ -102,6 +123,13 @@ nav ul {
   font-weight: 600;
 }
 
+@media only screen and (max-width: 768px) {
+  .logo {
+    font-size: 1.125rem;
+    /* lets us pass content block into mixin */
+  }
+}
+
 nav li {
   padding: 0.4rem 1.5vw;
 }
@@ -116,12 +144,26 @@ nav li {
   text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.6);
 }
 
+@media only screen and (max-width: 768px) {
+  .welcome-section {
+    font-size: 1.55rem;
+    /* lets us pass content block into mixin */
+  }
+}
+
 /* END of WELCOME SECTION STYLING */
 /* START of ABOUT SECTION STYLING */
 .about-fbox {
   max-width: 100%;
   display: flex;
   justify-content: space-between;
+}
+
+@media only screen and (max-width: 1200px) {
+  .about-fbox {
+    flex-direction: column;
+    /* lets us pass content block into mixin */
+  }
 }
 
 .about-text {
@@ -137,6 +179,14 @@ nav li {
   flex-basis: 250px;
   margin-left: 2.5rem;
   align-self: center;
+}
+
+@media only screen and (max-width: 1200px) {
+  .selfie-wrapper {
+    margin: 1.5rem auto 0;
+    max-width: 300px;
+    /* lets us pass content block into mixin */
+  }
 }
 
 .selfie {
@@ -190,52 +240,25 @@ nav li {
 }
 
 .fa-github-square {
-  color: #24292E;
+  color: #24292e;
 }
 
 .fa-twitter-square {
-  color: #1DA1F2;
+  color: #1da1f2;
 }
 
 .fa-youtube-square {
-  color: #FF0000;
+  color: #ff0000;
 }
 
 .fa-instagram {
-  color: #7E22C3;
+  color: #7e22c3;
 }
 
 /* END of CONTACT STYLING */
 footer {
   color: white;
-  font-size: 1.30rem;
+  font-size: 1.3rem;
   margin-bottom: 2.5rem;
   text-shadow: 1px 1px 0px black;
-}
-
-/* START of MEDIA QUERIES */
-@media (max-width: 1200px) {
-  .about-fbox {
-    flex-direction: column;
-  }
-  .selfie-wrapper {
-    margin: 1.5rem auto 0;
-    max-width: 300px;
-  }
-}
-
-@media (max-width: 768px) {
-  html {
-    font-size: 0.9rem;
-  }
-  .logo {
-    font-size: 1.125rem;
-  }
-  .welcome-section {
-    font-size: 1.55rem;
-  }
-  .main-box {
-    width: 90vw;
-    padding: 1.8rem 1.9rem;
-  }
 }
