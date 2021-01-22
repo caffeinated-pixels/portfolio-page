@@ -145,7 +145,7 @@ nav li {
 
 @media only screen and (max-width: 768px) {
   .nav-list {
-    display: block;
+    display: none;
     text-align: center;
     position: absolute;
     width: 100vw;
@@ -158,6 +158,7 @@ nav li {
 }
 
 .burger-btn {
+  display: none;
   cursor: pointer;
   -webkit-user-select: none;
   -moz-user-select: none;
