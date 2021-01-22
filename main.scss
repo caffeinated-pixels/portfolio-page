@@ -284,11 +284,9 @@ footer {
   font-size: 1.2rem;
   margin-bottom: 2.5rem;
   text-shadow: 1px 1px 0px black;
-}
 
-// @media (max-width: 768px) {
-//   .main-box {
-//     width: 90vw;
-//     padding: 1.8rem 1.9rem;
-//   }
-// }
+  .fa-github-square {
+    color: white;
+    font-size: 1.5rem;
+  }
+}
