@@ -76,7 +76,7 @@ a:hover, a:focus {
 /* END of GENERAL STYLING CLASSES */
 
 /* START of NAVBAR STYLING */
-#navbar {
+.navbar {
   background-color: black;
   color: white;
   padding: 0.9rem 1.4rem;
@@ -105,7 +105,7 @@ nav li {
 /* END of NAVBAR STYLING */
 
 /* START of WELCOME SECTION STYLING */
-#welcome-section {
+.welcome-section {
   height: 100vh;
   color: white;
   font-size: 1.75rem;
@@ -232,7 +232,7 @@ footer {
     font-size: 1.125rem;
   }
 
-  #welcome-section {
+  .welcome-section {
     font-size: 1.55rem;
   }
 
