@@ -134,6 +134,24 @@ nav li {
   padding: 0.4rem 1.5vw;
 }
 
+@media only screen and (max-width: 768px) {
+  .nav-link {
+    display: none;
+    /* lets us pass content block into mixin */
+  }
+}
+
+.burger-btn {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .burger-btn {
+    display: inline-block;
+    /* lets us pass content block into mixin */
+  }
+}
+
 /* END of NAVBAR STYLING */
 /* START of WELCOME SECTION STYLING */
 .welcome-section {

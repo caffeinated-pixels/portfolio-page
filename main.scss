@@ -126,6 +126,20 @@ nav ul {
 nav li {
   padding: 0.4rem 1.5vw;
 }
+
+.nav-link {
+  @include mq(768px) {
+    display: none;
+  }
+}
+
+.burger-btn {
+  display: none;
+
+  @include mq(768px) {
+    display: inline-block;
+  }
+}
 /* END of NAVBAR STYLING */
 
 /* START of WELCOME SECTION STYLING */
