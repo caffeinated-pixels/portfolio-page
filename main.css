@@ -235,7 +235,8 @@ nav li {
 /* START of PROJECTS STYLING */
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 450px));
   grid-gap: 2rem;
 }
 
