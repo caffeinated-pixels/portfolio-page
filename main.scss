@@ -127,14 +127,20 @@ nav li {
   padding: 0.4rem 1.5vw;
 }
 
-.nav-link {
+.menu {
   @include mq(768px) {
-    display: none;
+    // display: none;
+    text-alin: center;
   }
 }
 
 .burger-btn {
   display: none;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 
   @include mq(768px) {
     display: inline-block;
