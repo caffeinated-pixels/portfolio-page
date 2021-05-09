@@ -36,6 +36,12 @@ const projects = [
     altText: 'Markdown Previewer screen grab'
   },
   {
+    name: 'Random Quote Machine',
+    website: 'https://quote-o-matic-4000.netlify.app/',
+    image: './images/random-quote-machine.jpg',
+    altText: 'Random Quote Machine screen grab'
+  },
+  {
     name: 'Technical Documentation Page',
     website: 'https://cssflex-tech-doc.netlify.app/',
     image: './images/technical-documentation-page.jpg',
@@ -78,6 +84,29 @@ const projects = [
     altText: 'Tribute Page project screen grab'
   }
 ]
+
+const projectGridEl = document.getElementById('project-grid')
+let projectGridHTML = ''
+
+projects.forEach(project => {
+  const html = `
+    <div class="project-tile">
+      <a href="${project.website}">
+        <img
+          class="tile-img"
+          src="${project.image}"
+          alt="${project.altText}"
+        />
+        <p class="center-text">${project.name}</p>
+      </a>
+    </div>
+  `
+  projectGridHTML += html
+})
+
+projectGridEl.innerHTML = projectGridHTML
+
+console.log(projectGridHTML)
 
 // jQUERY SECTION
 $(function() {
