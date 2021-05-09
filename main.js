@@ -1,3 +1,85 @@
+const projects = [
+  {
+    name: 'Snake Game',
+    website: 'https://mercboy-snake.netlify.app/',
+    image: './images/mercboy-snake.png',
+    altText: 'snake game screen grab'
+  },
+  {
+    name: 'Pomodoro (25+5) Clock',
+    website: 'https://caffeinated-pomodoro-clock.netlify.app/',
+    image: './images/pomodoro-clock.jpg',
+    altText: 'Pomodoro (25+5) Clock screen grab'
+  },
+  {
+    name: 'JavaScript calculator',
+    website: 'https://mercenary-calculator.netlify.app/',
+    image: './images/javascript-calculator.jpg',
+    altText: 'JavaScript calculator screen grab'
+  },
+  {
+    name: 'To-do app',
+    website: 'https://caffeinated-todo-app.netlify.app/',
+    image: './images/to-do-app.jpg',
+    altText: 'To-do app screen grab'
+  },
+  {
+    name: 'Drum Machine',
+    website: 'https://merc-drum-machine.netlify.app/',
+    image: './images/drum-machine.jpg',
+    altText: 'Drum Machine screen grab'
+  },
+  {
+    name: 'Markdown Previewer',
+    website: 'https://markup-my-markdown.netlify.app/',
+    image: './images/markdown-previewer.jpg',
+    altText: 'Markdown Previewer screen grab'
+  },
+  {
+    name: 'Technical Documentation Page',
+    website: 'https://cssflex-tech-doc.netlify.app/',
+    image: './images/technical-documentation-page.jpg',
+    altText: 'Technical Documentation Page screen grab'
+  },
+  {
+    name: 'Product Landing Page',
+    website: 'https://moonsorrow-industries.netlify.app/',
+    image: './images/product-landing-page.jpg',
+    altText: 'Product landing page project screen grab'
+  },
+  {
+    name: 'Survey Form',
+    website: 'https://caffeinatedpixelsurveyform.netlify.app/',
+    image: './images/survey-form.jpg',
+    altText: 'Survey Form project screen grab'
+  },
+  {
+    name: 'Tetris',
+    website: 'https://caffeinated-tetris.netlify.app/',
+    image: './images/basic-tetris.jpg',
+    altText: 'Tetris game screen grab'
+  },
+  {
+    name: 'Local Weather App',
+    website: 'https://codepen.io/cakeisaliegaming/full/POexOx',
+    image: './images/local-weather-app.jpg',
+    altText: 'Local Weather App screen grab'
+  },
+  {
+    name: 'Wikipedia Viewer',
+    website: 'https://codepen.io/cakeisaliegaming/full/aVXKpN',
+    image: './images/wikipedia-viewer.jpg',
+    altText: 'Wikipedia Viewer project screen grab'
+  },
+  {
+    name: 'Tribute Page',
+    website: 'https://roquefort-tribute.netlify.app/',
+    image: './images/tribute-page-roquefort.jpg',
+    altText: 'Tribute Page project screen grab'
+  }
+]
+
+// jQUERY SECTION
 $(function() {
   //start document ready function
   $(document).on('click', 'a[href^="#"]', function(event) {
