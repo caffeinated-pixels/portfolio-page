@@ -85,32 +85,29 @@ const projects = [
   }
 ]
 
-const projectGridEl = document.getElementById('project-grid')
-let projectGridHTML = ''
-
-projects.forEach(project => {
-  const html = `
-    <div class="project-tile">
-      <a href="${project.website}">
-        <img
-          class="tile-img"
-          src="${project.image}"
-          alt="${project.altText}"
-        />
-        <p class="center-text">${project.name}</p>
-      </a>
-    </div>
-  `
-  projectGridHTML += html
-})
-
-projectGridEl.innerHTML = projectGridHTML
-
-console.log(projectGridHTML)
-
-// jQUERY SECTION
 $(function() {
   //start document ready function
+
+  let projectGridHTML = ''
+
+  projects.forEach(project => {
+    const html = `
+      <div class="project-tile">
+        <a href="${project.website}">
+          <img
+            class="tile-img"
+            src="${project.image}"
+            alt="${project.altText}"
+          />
+          <p class="center-text">${project.name}</p>
+        </a>
+      </div>
+    `
+    projectGridHTML += html
+  })
+
+  $('#project-grid').html(projectGridHTML)
+
   $(document).on('click', 'a[href^="#"]', function(event) {
     event.preventDefault()
     $('html, body').animate(
