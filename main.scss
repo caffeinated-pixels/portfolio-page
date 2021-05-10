@@ -57,7 +57,7 @@ body:after {
 
 .main-box {
   background-color: rgba(230, 208, 185, 0.9);
-  padding: 2.7rem 4rem;
+  padding: 2.7em 3em;
   border-radius: 10px;
   width: 80vw;
   max-width: 1600px;
@@ -108,8 +108,6 @@ a:focus {
   top: 0;
   left: 0;
   z-index: 20;
-  // overflow: auto;
-  // justify-content: space-between;
 }
 
 nav ul {
@@ -123,7 +121,7 @@ nav ul {
 }
 
 nav li {
-  padding: 0.4rem 1.5vw;
+  padding: 0.4em 1.5vw;
 }
 
 .menubox {
@@ -188,8 +186,7 @@ nav li {
 .project-grid {
   display: grid;
   justify-content: center;
-  // grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
-  grid-template-columns: repeat(auto-fit, minmax(200px, 400px));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 300px));
   grid-gap: 2em;
 }
 
@@ -200,7 +197,7 @@ nav li {
 }
 
 .tile-img {
-  width: 100%;
+  max-width: 100%;
   min-height: 300px;
   box-shadow: 3px 3px 8px grey;
   border-radius: 5%;
