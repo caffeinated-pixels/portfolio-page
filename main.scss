@@ -184,6 +184,31 @@ nav li {
 }
 /* END of WELCOME SECTION STYLING */
 
+/* START of PROJECTS STYLING */
+.project-grid {
+  display: grid;
+  justify-content: center;
+  // grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 400px));
+  grid-gap: 2em;
+}
+
+.project-tile p {
+  font-size: 1.3rem;
+  padding-top: 0.6rem;
+  font-weight: 600;
+}
+
+.tile-img {
+  width: 100%;
+  min-height: 300px;
+  box-shadow: 3px 3px 8px grey;
+  border-radius: 5%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+/* END of PROJECTS STYLING */
+
 /* START of ABOUT SECTION STYLING */
 .about-fbox {
   max-width: 100%;
@@ -223,31 +248,6 @@ nav li {
   box-shadow: 3px 3px 8px grey;
 }
 /* END of ABOUT SECTION STYLING */
-
-/* START of PROJECTS STYLING */
-.project-grid {
-  display: grid;
-  justify-content: center;
-  // grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
-  grid-template-columns: repeat(auto-fit, minmax(200px, 450px));
-  grid-gap: 2rem;
-}
-
-.project-tile p {
-  font-size: 1.3rem;
-  padding-top: 0.6rem;
-  font-weight: 600;
-}
-
-.tile-img {
-  width: 100%;
-  min-height: 300px;
-  box-shadow: 3px 3px 8px grey;
-  border-radius: 5%;
-  -o-object-fit: cover;
-  object-fit: cover;
-}
-/* END of PROJECTS STYLING */
 
 /* START of CONTACT STYLING */
 .fcontacts {
