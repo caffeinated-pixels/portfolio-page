@@ -1,5 +1,11 @@
 const projects = [
   {
+    name: 'Pac-man clone',
+    website: 'https://mercboy-pacman.netlify.app/',
+    image: './images/pacman.png',
+    altText: 'Pacman game screen grab'
+  },
+  {
     name: 'Snake Game',
     website: 'https://mercboy-snake.netlify.app/',
     image: './images/mercboy-snake.png',
