@@ -26,7 +26,7 @@ const projects = [
   {
     name: 'To-do app',
     website: 'https://caffeinated-todo-app.netlify.app/',
-    image: './images/to-do-app.jpg',
+    image: './images/to-do-app.png',
     altText: 'To-do app screen grab'
   },
   {
