@@ -44,7 +44,7 @@ const projects = [
   {
     name: 'Random Quote Machine',
     website: 'https://quote-o-matic-4000.netlify.app/',
-    image: './images/random-quote-machine.png',
+    image: './images/random-quote-machine.jpg',
     altText: 'Random Quote Machine screen grab'
   },
   {
