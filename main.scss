@@ -25,7 +25,7 @@ body {
   line-height: 1.42857143;
 }
 
-body:after {
+body::after {
   /* addresses iOS issue with fixed cover background */
   content: '';
   position: fixed; /* stretch a fixed position to the whole screen */
