@@ -1,5 +1,11 @@
 const projects = [
   {
+    name: 'Weather App',
+    website: 'https://caffeinated-weather.netlify.app/',
+    image: './images/caffeinated-weather.jpg',
+    altText: 'Weather app screen grab'
+  },
+  {
     name: 'Pac-man clone',
     website: 'https://mercboy-pacman.netlify.app/',
     image: './images/pacman.png',
@@ -70,12 +76,6 @@ const projects = [
     website: 'https://caffeinated-tetris.netlify.app/',
     image: './images/basic-tetris.jpg',
     altText: 'Tetris game screen grab'
-  },
-  {
-    name: 'Local Weather App',
-    website: 'https://codepen.io/cakeisaliegaming/full/POexOx',
-    image: './images/local-weather-app.jpg',
-    altText: 'Local Weather App screen grab'
   },
   {
     name: 'Wikipedia Viewer',
