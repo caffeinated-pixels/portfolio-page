@@ -1,5 +1,11 @@
 const projects = [
   {
+    name: 'NetFlix clone (React)',
+    website: 'https://retrofix.netlify.app/',
+    image: './images/retrofix.jpg',
+    altText: 'Netflix clone screen grab',
+  },
+  {
     name: 'Weather App (React)',
     website: 'https://caffeinated-weather.netlify.app/',
     image: './images/caffeinated-weather.jpg',
