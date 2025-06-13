@@ -18,6 +18,12 @@ const projects = [
     altText: 'Pacman game screen grab',
   },
   {
+    name: 'Tetris (JS)',
+    website: 'https://caffeinated-tetris.netlify.app/',
+    image: './images/basic-tetris.jpg',
+    altText: 'Tetris game screen grab',
+  },
+  {
     name: 'Snake Game (JS)',
     website: 'https://mercboy-snake.netlify.app/',
     image: './images/mercboy-snake.png',
@@ -76,12 +82,6 @@ const projects = [
     website: 'https://caffeinatedpixelsurveyform.netlify.app/',
     image: './images/survey-form.jpg',
     altText: 'Survey Form project screen grab',
-  },
-  {
-    name: 'Tetris (JS)',
-    website: 'https://caffeinated-tetris.netlify.app/',
-    image: './images/basic-tetris.jpg',
-    altText: 'Tetris game screen grab',
   },
   {
     name: 'Wikipedia Viewer (jQuery)',
