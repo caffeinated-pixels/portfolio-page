@@ -1,24 +1,24 @@
 const projects = [
   {
-    name: 'NetFlix clone (React)',
-    website: 'https://retrofix.netlify.app/',
+    name: 'NetFlix clone (Next.js/TS)',
+    website: 'https://retrofix-nextjs.netlify.app',
     image: './images/retrofix.jpg',
     altText: 'Netflix clone screen grab',
   },
   {
-    name: 'Weather App (React)',
+    name: 'Weather App (React/TS)',
     website: 'https://caffeinated-weather.netlify.app/',
     image: './images/caffeinated-weather.jpg',
     altText: 'Weather app screen grab',
   },
   {
-    name: 'Pac-man clone (JS)',
+    name: 'Pac-man clone (TS)',
     website: 'https://mercboy-pacman.netlify.app/',
     image: './images/pacman.png',
     altText: 'Pacman game screen grab',
   },
   {
-    name: 'Tetris (JS)',
+    name: 'Tetris (TS)',
     website: 'https://caffeinated-tetris.netlify.app/',
     image: './images/basic-tetris.jpg',
     altText: 'Tetris game screen grab',
@@ -36,13 +36,13 @@ const projects = [
     altText: 'Pomodoro (25+5) Clock screen grab',
   },
   {
-    name: 'JavaScript calculator (React)',
+    name: 'JavaScript calculator (React/TS)',
     website: 'https://mercenary-calculator.netlify.app/',
     image: './images/javascript-calculator.jpg',
     altText: 'JavaScript calculator screen grab',
   },
   {
-    name: 'To-do app (React)',
+    name: 'To-do app (React/TS)',
     website: 'https://caffeinated-todo-app.netlify.app/',
     image: './images/to-do-app.png',
     altText: 'To-do app screen grab',
