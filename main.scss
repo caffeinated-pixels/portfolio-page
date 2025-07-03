@@ -34,7 +34,7 @@ body::after {
   left: 0;
   right: 0;
   z-index: -1; /* needed to keep in the background */
-  background: url(./images/toronto1080.jpg) center center;
+  background: url(/images/toronto1080.webp) center center;
   background-size: cover;
 }
 
@@ -171,6 +171,8 @@ nav li {
 /* START of WELCOME SECTION STYLING */
 .welcome-section {
   height: 100vh;
+  background: url(/images/toronto1080.webp) center center;
+  background-size: cover;
   color: white;
   font-size: 1.75rem;
   text-shadow: 2px 2px 1px black;
@@ -178,6 +180,10 @@ nav li {
 
   @include mq(768px) {
     font-size: 1.55rem;
+  }
+
+  h1 {
+    // ... existing code ...
   }
 }
 /* END of WELCOME SECTION STYLING */
