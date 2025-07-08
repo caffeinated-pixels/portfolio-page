@@ -27,6 +27,17 @@ body {
   line-height: 1.42857143;
 }
 
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  background: rgba(20, 20, 20, 0.25);
+}
+
 body::after {
   /* addresses iOS issue with fixed cover background */
   content: '';
@@ -35,7 +46,7 @@ body::after {
   height: 100vh; /* fix for mobile browser address bar appearing disappearing */
   left: 0;
   right: 0;
-  z-index: -1; /* needed to keep in the background */
+  z-index: -2; /* needed to keep in the background */
   background: url(/images/toronto1080.webp) center center;
   background-size: cover;
 }
@@ -294,5 +305,9 @@ footer {
   .fa-github-square {
     color: white;
     font-size: 1.5rem;
+  }
+
+  a {
+    color: $link-blue-navbar;
   }
 }
