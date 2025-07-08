@@ -1,101 +1,5 @@
-const projects = [
-  {
-    name: 'NetFlix clone (Next.js/TS)',
-    website: 'https://retrofix-nextjs.netlify.app',
-    image: '/images/retrofix.webp',
-    altText: 'Netflix clone screen grab',
-  },
-  {
-    name: 'Weather App (React/TS)',
-    website: 'https://caffeinated-weather.netlify.app/',
-    image: '/images/caffeinated-weather.webp',
-    altText: 'Weather app screen grab',
-  },
-  {
-    name: 'Pac-man clone (TS)',
-    website: 'https://mercboy-pacman.netlify.app/',
-    image: '/images/pacman.webp',
-    altText: 'Pacman game screen grab',
-  },
-  {
-    name: 'Tetris (TS)',
-    website: 'https://caffeinated-tetris.netlify.app/',
-    image: '/images/basic-tetris.webp',
-    altText: 'Tetris game screen grab',
-  },
-  {
-    name: 'Snake Game (JS)',
-    website: 'https://mercboy-snake.netlify.app/',
-    image: '/images/mercboy-snake.webp',
-    altText: 'snake game screen grab',
-  },
-  {
-    name: 'Pomodoro (25+5) Clock (React)',
-    website: 'https://caffeinated-pomodoro-clock.netlify.app/',
-    image: '/images/pomodoro-clock.webp',
-    altText: 'Pomodoro (25+5) Clock screen grab',
-  },
-  {
-    name: 'JavaScript calculator (React/TS)',
-    website: 'https://mercenary-calculator.netlify.app/',
-    image: '/images/javascript-calculator.webp',
-    altText: 'JavaScript calculator screen grab',
-  },
-  {
-    name: 'To-do app (React/TS)',
-    website: 'https://caffeinated-todo-app.netlify.app/',
-    image: '/images/to-do-app.webp',
-    altText: 'To-do app screen grab',
-  },
-  {
-    name: 'Drum Machine (React)',
-    website: 'https://merc-drum-machine.netlify.app/',
-    image: '/images/drum-machine.webp',
-    altText: 'Drum Machine screen grab',
-  },
-  {
-    name: 'Markdown Previewer (React)',
-    website: 'https://markup-my-markdown.netlify.app/',
-    image: '/images/markdown-previewer.webp',
-    altText: 'Markdown Previewer screen grab',
-  },
-  {
-    name: 'Random Quote Machine (jQuery)',
-    website: 'https://quote-o-matic-4000.netlify.app/',
-    image: '/images/random-quote-machine.webp',
-    altText: 'Random Quote Machine screen grab',
-  },
-  {
-    name: 'Technical Documentation Page (HTML/CSS)',
-    website: 'https://cssflex-tech-doc.netlify.app/',
-    image: '/images/technical-documentation-page.webp',
-    altText: 'Technical Documentation Page screen grab',
-  },
-  {
-    name: 'Product Landing Page (HTML/CSS)',
-    website: 'https://moonsorrow-industries.netlify.app/',
-    image: '/images/product-landing-page.webp',
-    altText: 'Product landing page project screen grab',
-  },
-  {
-    name: 'Survey Form (HTML/CSS)',
-    website: 'https://caffeinatedpixelsurveyform.netlify.app/',
-    image: '/images/survey-form.webp',
-    altText: 'Survey Form project screen grab',
-  },
-  {
-    name: 'Wikipedia Viewer (jQuery)',
-    website: 'https://codepen.io/cakeisaliegaming/full/aVXKpN',
-    image: '/images/wikipedia-viewer.webp',
-    altText: 'Wikipedia Viewer project screen grab',
-  },
-  {
-    name: 'Tribute Page (HTML/CSS)',
-    website: 'https://roquefort-tribute.netlify.app/',
-    image: '/images/tribute-page-roquefort.webp',
-    altText: 'Tribute Page project screen grab',
-  },
-]
+import $ from 'jquery'
+import { projects } from './projects.js'
 
 $(function () {
   //start document ready function
@@ -110,6 +14,7 @@ $(function () {
             class="tile-img"
             src="${project.image}"
             alt="${project.altText}"
+            loading="lazy"
           />
           <p class="center-text">${project.name}</p>
         </a>
