@@ -28,6 +28,7 @@ body {
 }
 
 body::before {
+  /* darkens the background image */
   content: '';
   position: fixed;
   top: 0;
