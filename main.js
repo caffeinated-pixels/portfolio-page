@@ -1,3 +1,5 @@
+import $ from 'jquery'
+
 const projects = [
   {
     name: 'NetFlix clone (Next.js/TS)',

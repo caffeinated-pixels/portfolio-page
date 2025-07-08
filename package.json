@@ -1,0 +1,27 @@
+{
+  "name": "portfolio-page",
+  "version": "1.0.0",
+  "description": "A web page I made for the [Build a Personal Portfolio Webpage](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-personal-portfolio-webpage) freeCodeCamp challenge.",
+  "scripts": {
+    "start": "parcel index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/caffeinated-pixels/portfolio-page.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/caffeinated-pixels/portfolio-page/issues"
+  },
+  "homepage": "https://github.com/caffeinated-pixels/portfolio-page#readme",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.15.4",
+    "parcel": "^2.15.4"
+  },
+  "dependencies": {
+    "jquery": "^3.7.1"
+  }
+}
