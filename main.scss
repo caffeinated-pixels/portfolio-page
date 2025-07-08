@@ -1,5 +1,6 @@
 $header-bg: black;
-$link-blue: #3399ff;
+$link-blue: #0057ad;
+$link-blue-navbar: #3399ff;
 
 @mixin mq($size) {
   @media only screen and (max-width: $size) {
@@ -75,9 +76,9 @@ body::after {
 h2 {
   font-size: 2rem;
   margin-bottom: 1.6rem;
-  color: white;
-  text-shadow: 1px 1px 1px black;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+  color: black;
+  text-shadow: 1px 1px 1px grey;
+  text-shadow: 1px 1px 1px rgba(128, 128, 128, 0.5);
 }
 
 a {
@@ -91,10 +92,6 @@ a:focus {
   color: #b45922;
 }
 
-.main-box a {
-  text-shadow: 0.5px 0.5px 0.5px grey;
-  text-shadow: 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.4);
-}
 /* END of GENERAL STYLING CLASSES */
 
 /* START of NAVBAR STYLING */
@@ -109,6 +106,10 @@ a:focus {
   top: 0;
   left: 0;
   z-index: 20;
+
+  a {
+    color: $link-blue-navbar;
+  }
 }
 
 nav ul {
@@ -181,6 +182,7 @@ nav li {
     font-size: 1.55rem;
   }
 }
+
 /* END of WELCOME SECTION STYLING */
 
 /* START of PROJECTS STYLING */
