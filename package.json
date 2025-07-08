@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "A web page I made for the [Build a Personal Portfolio Webpage](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-personal-portfolio-webpage) freeCodeCamp challenge.",
   "scripts": {
-    "start": "set TMP=/f/temp && set TEMP=/f/temp && parcel index.html",
+    "start": "parcel index.html",
     "build": "parcel build"
   },
   "browserslist": "> 0.5%, last 2 versions, not dead",
